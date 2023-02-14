@@ -7,38 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-	<h1>File Contents</h1>
-	<div id="files">
-		<!-- This is where the file names and contents will be added -->
-	</div>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
 
 
-(function ($) {
-    "use strict";
+        (function ($) {
+            "use strict";
 
-    $(document).ready(function () {
-        $.get("example.html", function(data) {
-        // data contains the contents of the HTML file
-        console.log(data);
-        });
-    });
-
-
-    $.ajax({
-        url: 'files',
-        success: function(data) {
-            const files = $(data).find('a').map(function() { return $(this).text(); }).get();
-            const fileCount = files.length;
-            console.log('There are ' + fileCount + ' files in the folder.');
-        }
-    });
+            $(document).ready(function () {
+                $.get("files", function(data) {
+                // data contains the contents of the HTML file
+                console.log(data);
+                });
+            });
 
 
 
-
-}(jQuery));
+        }(jQuery));
 
 
 	</script>
