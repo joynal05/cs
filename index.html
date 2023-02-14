@@ -16,10 +16,20 @@
             "use strict";
 
             $(document).ready(function () {
-                $.get("./files/adfadf.html", function(data) {
-                // data contains the contents of the HTML file
-                console.log(data);
-                });
+                var i = 0;
+                var x = 1000000000;
+    
+                
+                for (i; i < x; i++) {
+                    $.get("./files/text-" + i + ".html", function(data) {
+                        console.log(i);
+                        console.log(data);
+                        console.log(data.length);
+                    });
+                }
+
+
+                
             });
 
 
