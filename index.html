@@ -19,10 +19,26 @@
     "use strict";
 
     $(document).ready(function () {
-        $.get("example.html", function(data) {
-        // data contains the contents of the HTML file
-        console.log(data);
-        });
+
+
+        $.ajax({
+				url: "files/", // directory containing your text files
+				success: function(data) {
+					$(data).find("a").attr("href", function(i, val) {
+						// loop through all the files in the directory
+						if (val.match(/\.txt$/)) {
+							// if the file is a text file, add its name to an h2 tag
+							$("#files").append("<h2>" + val + "</h2>");
+							// read the contents of the file and add it to a p tag
+							$.get("files/" + val, function(data) {
+								$("#files").append("<p>" + data + "</p>");
+							});
+						}
+					});
+				}
+			});
+
+
     });
 
 }(jQuery));
