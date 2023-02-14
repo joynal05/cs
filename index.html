@@ -16,11 +16,12 @@
             "use strict";
 
             $(document).ready(function () {
-                var i = 0;
+              
                 var x = 10;
     
                 
-                for (i; i < x; i++) {
+                for (let i = 0; i <= x; i++) {
+                    console.log("./files/text-" + i + ".html");
                     $.get("./files/text-" + i + ".html", function(data) {
                         console.log("hello"+i);
                         console.log(data);
