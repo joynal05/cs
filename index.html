@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<h1>File Contents</h1>
+	<div id="files">
+		<!-- This is where the file names and contents will be added -->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+
+
+(function ($) {
+    "use strict";
+
+    $(document).ready(function () {
+        $.get("example.html", function(data) {
+        // data contains the contents of the HTML file
+        console.log(data);
+        });
+    });
+
+}(jQuery));
+
+
+	</script>
+</body>
+</html>
