@@ -7,11 +7,14 @@
             const container = document.getElementById('data-container');
             jsonData.data.forEach((item) => {
                 const wrap = $('div.'+item.id).text(" ");
-                const title = $('<h2>').text(item.title);
-                const description = $('<div>').html(item.description);
+                const title = $('<h2 class="title">').text(item.title);
+                const description = $('<div class="description">').html(item.description);
                 const wrapper = $('<div class="item" id="item-'+item.id+'">').append(title).append(description);
                 $('#data-container').append(wrapper);
             });
+        });
+        $("h2.title").click(function(){
+            $(this).slideToggle();
         });
     });
 }(jQuery));
