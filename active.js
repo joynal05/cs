@@ -1,7 +1,6 @@
 (function ($) {
     "use strict";
     $(document).ready(function () {
-        var jsonData = "";
         $.getJSON("https://raw.githubusercontent.com/joynal9933/cs/main/data.json", function(jsonData) {
             console.log(jsonData);
             const container = document.getElementById('data-container');
@@ -12,9 +11,9 @@
                 const wrapper = $('<div class="item" id="item-'+item.id+'">').append(title).append(description);
                 $('#data-container').append(wrapper);
             });
-        });
-        $("h2.title").click(function(){
-            $(this).slideToggle();
+            $("h2").click(function(){
+                $(this).siblings('.description').slideToggle('fast');
+            });
         });
     });
 }(jQuery));
