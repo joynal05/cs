@@ -6,7 +6,7 @@
             const container = document.getElementById('data-container');
             jsonData.data.forEach((item) => {
                 const wrap = $('div.'+item.id).text(" ");
-                const title = $('<h2 class="title">').text(item.title);
+                const title = $('<h2 class="title">').text(item.id+". "+item.title);
                 const description = $('<div class="description">').html(item.description);
                 const wrapper = $('<div class="item" id="item-'+item.id+'">').append(title).append(description);
                 $('#data-container').append(wrapper);
