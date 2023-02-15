@@ -1,76 +1,55 @@
 {
-    "links": {
-      "self": "http://example.com/articles",
-      "next": "http://example.com/articles?page[offset]=2",
-      "last": "http://example.com/articles?page[offset]=10"
-    },
-    "data": [{
-      "type": "articles",
-      "id": "1",
-      "attributes": {
-        "title": "JSON:API paints my bikeshed!"
+    "data": [
+      {
+        "id": 1,
+        "title": "Example Title 1",
+        "description": "This is an example description 1"
       },
-      "relationships": {
-        "author": {
-          "links": {
-            "self": "http://example.com/articles/1/relationships/author",
-            "related": "http://example.com/articles/1/author"
-          },
-          "data": { "type": "people", "id": "9" }
-        },
-        "comments": {
-          "links": {
-            "self": "http://example.com/articles/1/relationships/comments",
-            "related": "http://example.com/articles/1/comments"
-          },
-          "data": [
-            { "type": "comments", "id": "5" },
-            { "type": "comments", "id": "12" }
-          ]
-        }
+      {
+        "id": 2,
+        "title": "Example Title 2",
+        "description": "This is an example description 2"
       },
-      "links": {
-        "self": "http://example.com/articles/1"
+      {
+        "id": 3,
+        "title": "Example Title 3",
+        "description": "This is an example description 3"
+      },
+      {
+        "id": 4,
+        "title": "Example Title 4",
+        "description": "This is an example description 4"
+      },
+      {
+        "id": 5,
+        "title": "Example Title 5",
+        "description": "This is an example description 5"
+      },
+      {
+        "id": 6,
+        "title": "Example Title 6",
+        "description": "This is an example description 6"
+      },
+      {
+        "id": 7,
+        "title": "Example Title 7",
+        "description": "This is an example description 7"
+      },
+      {
+        "id": 8,
+        "title": "Example Title 8",
+        "description": "This is an example description 8"
+      },
+      {
+        "id": 9,
+        "title": "Example Title 9",
+        "description": "This is an example description 9"
+      },
+      {
+        "id": 10,
+        "title": "Example Title 10",
+        "description": "This is an example description 10"
       }
-    }],
-    "included": [{
-      "type": "people",
-      "id": "9",
-      "attributes": {
-        "firstName": "Dan",
-        "lastName": "Gebhardt",
-        "twitter": "dgeb"
-      },
-      "links": {
-        "self": "http://example.com/people/9"
-      }
-    }, {
-      "type": "comments",
-      "id": "5",
-      "attributes": {
-        "body": "First!"
-      },
-      "relationships": {
-        "author": {
-          "data": { "type": "people", "id": "2" }
-        }
-      },
-      "links": {
-        "self": "http://example.com/comments/5"
-      }
-    }, {
-      "type": "comments",
-      "id": "12",
-      "attributes": {
-        "body": "I like XML better"
-      },
-      "relationships": {
-        "author": {
-          "data": { "type": "people", "id": "9" }
-        }
-      },
-      "links": {
-        "self": "http://example.com/comments/12"
-      }
-    }]
+    ]
   }
+  

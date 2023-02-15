@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+	<div id="data-container"></div>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
@@ -15,6 +16,17 @@
             $(document).ready(function () {
 				$.getJSON("https://raw.githubusercontent.com/joynal9933/cs/main/data.json", function(data) {
 					console.log(data);
+					const container = document.getElementById('data-container');
+					jsonData.data.forEach((item) => {
+						const title = document.createElement('h2');
+						title.textContent = item.title;
+
+						const description = document.createElement('p');
+						description.textContent = item.description;
+
+						container.appendChild(title);
+						container.appendChild(description);
+					});
 				});
 			});
 		}(jQuery));
