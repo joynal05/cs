@@ -24,9 +24,11 @@ div#data-container .item {
 
 div#data-container .item>div {
     display: none;
-    padding: 20px;
+    padding: 40px 20px;
     font-size: 18px;
     background: #eeeeee63;
+    line-height: 1.6;
+    word-spacing: 2px;
 }
 
 div#data-container .item>h2 {
