@@ -21,7 +21,8 @@
 						const wrap = $('div.'+item.id).text(" ");
 						const title = $('<h2>').text(item.title);
 						const description = $('<p>').text(item.description);
-						$('#data-container').append(wrap).append(title).append(description);
+						const wrapper = $('<div>').append(title).append(description);
+						$('#data-container').append(wrapper);
 					});
 				});
 			});
