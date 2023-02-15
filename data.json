@@ -1,56 +1,55 @@
 {
     "data": [
-        {
-            "id": 1,
-            "title": "New ticket",
-            "description": "Hi there, Thank you for reaching out to us. I understand that you are facing an issue and I am here to help. 
-            I am currently reviewing the details of your issue and working to find a solution.
-            I 'll get back to you as soon as I have an update or any further information. "
-        },
-        {
-            "id": 2,
-            "title": "Example Title 2",
-            "description": "This is an example description 2"
-        },
-        {
-            "id": 3,
-            "title": "Example Title 3",
-            "description": "This is an example description 3"
-        },
-        {
-            "id": 4,
-            "title": "Example Title 4",
-            "description": "This is an example description 4"
-        },
-        {
-            "id": 5,
-            "title": "Example Title 5",
-            "description": "This is an example description 5"
-        },
-        {
-            "id": 6,
-            "title": "Example Title 6",
-            "description": "This is an example description 6"
-        },
-        {
-            "id": 7,
-            "title": "Example Title 7",
-            "description": "This is an example description 7"
-        },
-        {
-            "id": 8,
-            "title": "Example Title 8",
-            "description": "This is an example description 8"
-        },
-        {
-            "id": 9,
-            "title": "Example Title 9",
-            "description": "This is an example description 9"
-        },
-        {
-            "id": 10,
-            "title": "Example Title 10",
-            "description": "<h3>ha ha</h3> fp2f"
-        }
+      {
+        "id": 1,
+        "title": "Example Title 1",
+        "description": "This is an example description 1"
+      },
+      {
+        "id": 2,
+        "title": "Example Title 2",
+        "description": "This is an example description 2"
+      },
+      {
+        "id": 3,
+        "title": "Example Title 3",
+        "description": "This is an example description 3"
+      },
+      {
+        "id": 4,
+        "title": "Example Title 4",
+        "description": "This is an example description 4"
+      },
+      {
+        "id": 5,
+        "title": "Example Title 5",
+        "description": "This is an example description 5"
+      },
+      {
+        "id": 6,
+        "title": "Example Title 6",
+        "description": "This is an example description 6"
+      },
+      {
+        "id": 7,
+        "title": "Example Title 7",
+        "description": "This is an example description 7"
+      },
+      {
+        "id": 8,
+        "title": "Example Title 8",
+        "description": "This is an example description 8"
+      },
+      {
+        "id": 9,
+        "title": "Example Title 9",
+        "description": "This is an example description 9"
+      },
+      {
+        "id": 10,
+        "title": "Example Title 10",
+        "description": "<h3>ha ha</h3> fp2f"
+      }
     ]
-}
+  }
+  
